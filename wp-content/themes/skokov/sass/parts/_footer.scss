@@ -1,0 +1,147 @@
+//----------------------------FOOTER-------------------------
+#footer {
+  padding: 20px 0 0 0;
+  font-size: 10px;
+  color: #ffffff;
+  background-color: #3f3f44;
+
+  a {
+    color: inherit;
+  }
+
+  .footer-section {
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+
+  .footer-title {
+    font-size: 1.4em;
+    margin-bottom: 25px;
+  }
+
+  .footer-link {
+    color: $second-color;
+  }
+
+  .button-link {
+    margin-top: 30px;
+    font-size: 1.2em;
+    line-height: 2em;
+  }
+
+  #widget-media-container {
+
+    .item {
+      float: left;
+      width: 31%;
+      margin-right: 2%;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .tweets-section {
+    margin-bottom: 0;
+  }
+
+  .latest-tweets {
+    position: relative;
+
+    li{
+      margin-left: 3em;
+      margin-bottom: 10px;
+
+      &:before {
+        position: absolute;
+        content: "\f099";
+        left: 0;
+        display: inline-block;
+        font: 2.2em/1.6em FontAwesome;
+      }
+    }
+
+    .twitter-hashtag {
+      color: $second-color;
+    }
+
+    .tweet-details {
+      a{
+        color: $second-color;
+        font-size: 0.7em;
+      }
+    }
+  }
+  #spoontalk-sociamedia-icons-widget-2 {
+    h3 {
+      float: left;
+      margin-right: 10px;
+    }
+    .alignment {
+      float: left;
+    }
+
+    a{
+      margin: 0 !important;
+    }
+  }
+
+  #mc4wp-form-1 {
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    .email {
+      width: 250px;
+      max-width: calc(100% - 30px);
+      color: #ffffff;
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid $second-color;
+    }
+
+    .button{
+      width: 20px;
+      padding: 0 4px;
+      background-color: #000000;
+      border: none;
+    }
+  }
+
+  .footer-bottom-block {
+    background-color: #000000;
+
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .bottom-nav {
+      text-align: center;
+      li {
+        display: inline-block;
+        margin-left: 50px;
+      }
+
+      a {
+        display: inline-block;
+        padding: 0 10px;
+        color: #ffffff;
+        font: bold 1.2em/2.2em CodeLight;
+        text-transform: uppercase;
+
+        &:hover,
+        &:focus {
+          color: #000000;
+          background-color:$second-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

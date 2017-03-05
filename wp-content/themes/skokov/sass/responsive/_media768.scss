@@ -1,0 +1,180 @@
+@media screen and (min-width: 768px) {
+  body {
+    font: bold 14px/18px CenturyGothicRegular;
+  }
+
+  .header-first-section {
+    h1 {
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-bottom: 40px;
+    }
+  }
+
+  .element-sidebar {
+    margin-bottom: 30px;
+  }
+
+
+
+  #header {
+    padding: 5px 0;
+
+    .logo {
+      width: 116px;
+      height: 116px;
+      overflow: hidden;
+    }
+  }
+  .slider-section {
+    #slider-top {
+      max-height: calc(100vh - 130px);
+
+      .content-wrapper {
+        margin-top: 20px;
+        margin-bottom: 80px;
+        padding: 0 40px;
+      }
+
+      h2 {
+        margin-top: 12%;
+        font-size: 2.4em;
+        text-align: left;
+      }
+
+      .button-link {
+        margin: 60px 0 5px;
+      }
+
+      .wrapper-img {
+        margin-left: calc(-100% / 11);
+      }
+
+      .fa {
+        font-size: 50px;
+        line-height: 100px;
+      }
+    }
+  }
+
+  .masonry-section {
+    .masonry {
+      margin-bottom: 80px;
+    }
+  }
+
+  .clients-section {
+    .sl {
+      margin: 0 40px 80px;
+
+      .sl_slide {
+        padding: 0 20px;
+      }
+    }
+
+    .slick-prev,
+    .slick-next {
+      &:before {
+        margin-top: -40px;
+        font: 40px/100px FontAwesome;
+      }
+    }
+  }
+
+  #footer {
+    font-size: 11px;
+    padding: 20px 0 0 0;
+
+    .latest-tweets {
+      li {
+        margin-bottom: 15px;
+      }
+    }
+
+    .footer-bottom-block {
+      .bottom-nav {
+        li {
+          margin-left: 5px;
+        }
+        a {
+          padding: 0 3px;
+        }
+      }
+    }
+  }
+
+  .portfolio-section {
+
+    .portfolio-menu {
+      text-align: left;
+    }
+    .portfolio {
+      li {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .error-section {
+    padding: 60px 0 120px;
+
+    .title {
+      font-size: 12.5em;
+    }
+
+    .bg {
+      font-size: 6em;
+    }
+
+    .bunch {
+      margin: 0 5px;
+    }
+  }
+
+  .primary-content {
+    font-size: 13px;
+
+    iframe {
+      height: 500px;
+    }
+  }
+
+  #slider-project {
+    .slider-img {
+      margin: 0 auto;
+    }
+
+    .slider-nav-bottom {
+
+      img {
+        height: 60px;
+      }
+    }
+  }
+
+  .text-wrapper {
+    padding: 0 30px;
+  }
+
+  #message-form {
+    margin-bottom: 0px;
+  }
+
+  aside {
+    .widget_archive,
+    .widget_categories {
+      li {
+        width: 100%;
+      }
+    }
+
+    .popular-posts {
+      .link-post {
+        display: block;
+        float: none;
+      }
+    }
+  }
+}

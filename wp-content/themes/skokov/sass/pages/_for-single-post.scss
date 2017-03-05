@@ -1,0 +1,163 @@
+//----------------------------POST-------------------------
+.post-header {
+  margin-bottom: 20px;
+  background-color: $second-color;
+
+ img {
+   width: 100%;
+   height: auto;
+
+ }
+
+  .text-block {
+    padding-bottom: 0;
+
+    &:before {
+      top: -40px;
+    }
+  }
+
+  h1 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #000000;
+  }
+
+  .top-info {
+    text-align: right;
+  }
+
+  .fa-heart {
+    margin-right: 20px;
+  }
+
+  .info-news {
+    float: none;
+  }
+}
+
+.share-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  .fa-ul {
+    margin-left: 1em;
+  }
+
+  li {
+    display: inline-block;
+    margin-left: 2em;
+    margin-bottom: 5px;
+
+    a {
+      display: inline-block;
+      padding: 0 1em;
+      color: inherit;
+      background-color: $second-color;
+
+      &:hover {
+        transform: scale(1.2, 1.2);
+        text-decoration: none;
+      }
+    }
+
+    .fa-li {
+      top: 0;
+      left: -2em;
+      font-size: 1em;
+      line-height: 2em;
+      color: #ffffff;
+      background-color: #000000;
+    }
+  }
+}
+
+//----------------------------COMMENTS-------------------------
+.comments {
+  .icon-wrapper {
+    float: left;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+
+  li {
+    margin-bottom: 20px;
+
+    > ul {
+      > li {
+        margin: 20px 0 0 35px;
+      }
+    }
+  }
+
+  .text-comment {
+    overflow: hidden;
+
+    a {
+      color: #B9A600;
+    }
+  }
+
+  .info-comment {
+    color: #000000;
+    line-height: 1em;
+    margin-bottom: 1em;
+
+    a {
+      color: inherit;
+    }
+
+    .autor,
+    .time {
+      &:after {
+        content: "/";
+        margin: 0 1.3em 0 1.3em;
+      }
+    }
+  }
+}
+
+.comment-form {
+
+    input, textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 0 15px;
+      border: none;
+      border-radius: 0;
+    }
+
+  .button-link {
+    float: right;
+    display: inline-block;
+    width: auto;
+    padding: 0 15px;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #ffffff;
+    background-color: #000000;
+    border: 2px solid transparent;
+    border-bottom-color: $second-color;
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      text-decoration: none;
+      border-color: $second-color;
+    }
+  }
+}

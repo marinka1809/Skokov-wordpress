@@ -1,0 +1,53 @@
+//----------------------------SLIDER-PROJECT-------------------------
+#slider-project {
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: #403f46;
+
+  .slider-content {
+    padding: 0 40px;
+  }
+
+  .slider-img {
+    margin: 0 auto;
+  }
+
+  .slider-nav-bottom {
+    position: static;
+    width: 100%;
+    margin: 0;
+    background-color: #000000;
+
+    li {
+      position: relative;
+      width: auto;
+      height: auto;
+      text-indent: 0;
+      border: none;
+      border-radius: 0;
+
+      &:after {
+        content: "";
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(255, 234, 0, 0.5);
+        border: 2px solid $second-color;
+      }
+
+      &.active {
+        &:after {
+          display: block;
+        }
+      }
+    }
+
+    img {
+      height: 40px;
+      width: auto;
+    }
+  }
+}

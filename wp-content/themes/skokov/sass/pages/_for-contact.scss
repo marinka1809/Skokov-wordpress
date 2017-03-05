@@ -1,0 +1,54 @@
+//----------------------contact.html-------------------
+
+#message-form {
+  overflow: hidden;
+  margin-bottom: 30px;
+
+  .list-input {
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+
+  li {
+    padding: 0 10px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    line-height: 3em;
+    border: 0;
+  }
+
+  input[placeholder],
+  textarea[placeholder]  {
+    color: $dark-primary-color;
+  }
+
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    color: $dark-primary-color;
+  }
+
+  input::-moz-placeholder,
+  textarea::-moz-placeholder {
+    color: $dark-primary-color;
+  }
+
+  input:-moz-placeholder,
+  textarea:-moz-placeholder {
+    color: $dark-primary-color;
+  }
+
+  input:-ms-input-placeholder,
+  textarea:-ms-input-placeholder {
+    color: $dark-primary-color;
+  }
+
+  .button-link {
+    float: right;
+    line-height: 2em;
+  }
+}
