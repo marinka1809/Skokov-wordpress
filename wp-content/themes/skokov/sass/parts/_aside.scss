@@ -1,0 +1,129 @@
+//----------------------ASIDE----------------------
+aside {
+
+  .project-details {
+    li {
+    }
+  }
+
+  .widget_search {
+    padding: 20px 20px;
+
+    .search {
+      position: relative;
+
+      button,
+      input {
+        color: #737373;
+        border: none;
+      }
+
+      input {
+        width: 100%;
+        padding: 0 50px 0 15px;
+        font-size: 1.2em;
+        line-height: 1.4em;
+        border-radius: 30px;
+        background-color: #f6f6f6;
+
+        &:focus {
+          box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2), inset 0 1px 2px rgba(0, 0, 0, 0.4);
+        }
+      }
+
+      button {
+        position: absolute;
+        top: -0.5em;
+        right: 15px;
+        font-size: 1.3em;
+        cursor: pointer;
+        background: none;
+        opacity: 0.6;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .widget_archive,
+  .widget_categories {
+    li {
+      float: left;
+      width: 50%;
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: inherit;
+      line-height: 1.2em;
+
+      &:hover {
+        color: #cacaca;
+        text-decoration: none;
+      }
+
+      &:before {
+        content: "\f105";
+        display: inline-block;
+        margin-right: 0.5em;
+        padding: 0 0.3em;
+        font: 1.8em/1em FontAwesome;
+        color: $dark-primary-color;
+        background-color: $second-color;
+       }
+    }
+  }
+
+  .popular-posts {
+
+    li {
+      margin-bottom: 20px;
+      overflow: hidden;
+
+      a {
+        color: inherit;
+        &:hover {
+          transform: scale(1.2, 1.2);
+        }
+      }
+    }
+
+    .link-post {
+      float: left;
+      margin-right: 10px;
+    }
+
+    .info-bottom {
+      text-align: right;
+      text-transform: capitalize;
+      color: $second-color;
+      font-size: 0.8em;
+
+      .post-date {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .tagcloud {
+    margin-bottom: 30px;
+
+    a {
+      display: inline-block;
+      margin-bottom: 2px;
+      padding: 0 10px;
+      font-size: 1em !important;
+      color: $dark-primary-color;
+      background-color: $second-color;
+
+      &:hover {
+        text-decoration: none;
+        color: #000000;
+        transform: scale(1.1, 1.1);
+      }
+    }
+
+  }
+}

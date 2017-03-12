@@ -1,0 +1,120 @@
+//---------------------------HEADER------------------------
+#header {
+  padding: 5px 0;
+
+  .logo {
+    float: left;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+  }
+
+  .main-navigation{
+    float: right;
+    width: auto;
+  }
+  .main-nav {
+     padding: 20px 0 0;
+     >li {
+       margin-left: 10px;
+       >a {
+         padding: 0 10px;
+         color: #000000;
+         font-family: CodeLight;
+         font-weight: bold;
+         line-height: 4em;
+
+         text-transform: uppercase;
+
+         &:hover,
+         &:focus,
+         &.active {
+           background-color:$second-color;
+           text-decoration: none;
+         }
+       }
+
+       &.current-page-item,
+       &.current-menu-item {
+         >a {
+           background-color:$second-color;
+           //text-decoration: none;
+         }
+       }
+     }
+
+    li.current-page-item,
+    li.current-menu-item
+    {
+      a {
+        background-color:$second-color;
+        //text-decoration: none;
+      }
+    }
+   }
+}
+
+
+
+.nav-wrapper {
+  margin: 0;
+  background: transparent;
+  border:none;
+  box-shadow:none;
+
+  .mob-menu-button {
+    margin: 20px;
+    background-color: transparent;
+
+    .icon-bar {
+      color: $second-color;
+    }
+
+    &:focus,
+    &:hover,
+    .active{
+      background-color: transparent;
+      box-shadow: 0 0 8px $second-color;
+    }
+  }
+
+  //.collapsing {
+  //  position: absolute;
+  //  top: 85px;
+  //  left: 0;
+  //  right: 0;
+  //  z-index: 2;
+  //  background-color: #f6f6f6;
+  //
+  //  .main-nav {
+  //    padding-top: 0;
+  //    > li {
+  //      > a { // символы > для увеличения веса сылектора, чтобы перебить бутстраповские стили.
+  //        font-size: 1em;
+  //        line-height: 1em;
+  //      }
+  //    }
+  //  }
+  //}
+  //
+  //.collapse.in {
+  //  position: absolute;
+  //  top: 85px;
+  //  left: 0;
+  //  right: 0;
+  //  z-index: 2;
+  //  background-color: #f6f6f6;
+  //
+  //  .main-nav {
+  //    padding-top: 0;
+  //    > li {
+  //      > a { // символы > для увеличения веса сылектора, чтобы перебить бутстраповские стили.
+  //        font-size: 1em;
+  //        line-height: 1em;
+  //      }
+  //    }
+  //  }
+  //}
+
+
+}

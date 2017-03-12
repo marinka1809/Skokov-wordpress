@@ -1,0 +1,42 @@
+//----------------------------ERROR-SECTION-------------------------
+.error-section {
+  padding: 30px 0 50px;
+  text-align: center;
+
+  .title {
+    display: block;
+    font-size: 8em;
+    line-height: 1.2em;
+  }
+
+  .bg {
+    display: inline-block;
+    margin-bottom: 0.5em;
+    font-size: 2.8em;
+    line-height: 0.8em;
+    color: $second-color;
+    background-color: $dark-primary-color;
+
+    strong {
+      display: inline-block;
+      margin-top: -0.2em;
+      padding-bottom: 0.2em;
+    }
+
+    .exclamation-mark {
+      font-size: 1.5em;
+    }
+  }
+
+  .bunch {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0 1em;
+    line-height: 2em;
+    background-color: $second-color
+  }
+
+  .button-link {
+    line-height: 2em;
+  }
+}

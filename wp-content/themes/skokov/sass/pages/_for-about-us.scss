@@ -1,0 +1,132 @@
+//----------------------------ABOUT-US.html-------------------------
+.introductory-section {
+  margin-top: 60px;
+  line-height: 1.4em;
+
+  .img-title {
+    margin-bottom: 30px;
+  }
+
+  header {
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2em;
+      text-transform: uppercase;
+      font-weight: normal;
+    }
+    .header-p {
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+  }
+
+  p {
+    margin-bottom: 10px;
+    font-weight: normal;
+  }
+}
+
+.skills-section {
+  li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+  }
+
+  .percent {
+    float: left;
+    padding: 0 0.3em;
+
+    color: $second-color;
+    font-weight: normal;
+    background-color: #000000;
+  }
+
+  .full-band {
+    overflow: hidden;
+    background-color: $dark-primary-color;
+  }
+
+  .skill-name {
+    padding: 0 10px;
+    text-transform: uppercase;
+    background-color: $second-color;
+
+    &.photoshop {
+      width: 90%;
+    }
+    &.html-css {
+      width: 87%;
+    }
+    &.wordpress {
+      width: 70%;
+    }
+    &.javascript {
+      width: 75%;
+    }
+    &.illustrator {
+      width: 80%;
+    }
+    &.php {
+      width: 76%;
+    }
+    &.joomla {
+      width: 65%;
+    }
+    &.mysql {
+      width: 85%;
+    }
+  }
+}
+
+.section-team {
+
+  li {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .photo-wrapper {
+    display: inline-block;
+    max-width: 200px;
+    max-height: 200px;
+    overflow: hidden;
+    border: 4px solid $second-color;
+    border-radius: 50%;
+
+    &:hover {
+      transform: scale(1.1, 1.1)
+    }
+  }
+
+  .caption-photo {
+    width: 13em;
+    margin-bottom: 0;
+    padding: 0 5px;
+    font-size: 0.9em;
+    line-height: 1.4em;
+
+    a {
+      color: inherit;
+    }
+
+  }
+
+  .send-link {
+    display: inline-block;
+    width: 13em;
+    padding: 0 5px;
+    font-size: 0.9em;
+    line-height: 1.3em;
+    text-align: center;
+    color: $second-color;
+    text-transform: uppercase;
+    background-color: #000000;
+    border: 2px solid transparent;
+    border-bottom: 2px solid $second-color;
+
+    &:hover {
+      border: 2px solid $second-color;
+      text-decoration: none;
+    }
+  }
+}

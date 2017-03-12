@@ -1,0 +1,91 @@
+//----------------------------PRIMARY-CONTENT-------------------------
+.primary-content {
+  font-size: 11px;
+  line-height: 2em;
+
+  .section {
+    padding-top: 0;
+  }
+
+  h2,
+  .caption-photo {
+    display: inline-block;
+    width: 14em;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 1.2em;
+    color: $second-color;
+    text-transform: uppercase;
+    background-color: $dark-primary-color;
+  }
+
+  .header-in-about-us {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 40px;
+  }
+
+  .contact {
+    font-size: 0.9em;
+
+    a {
+      color: inherit;
+    }
+    .link-mail {
+      padding: 0 5px;
+      color: $second-color;
+      background-color: $dark-primary-color;
+
+    }
+  }
+}
+
+//----------------------------TEXT-WRAPPER-------------------------
+.text-wrapper {
+  margin-bottom: 10px;
+  padding: 0 15px;
+
+  .bottom-line {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #cacaca;
+  }
+
+  .size-full {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+//----------------------------RECENT-------------------------
+
+.recent {
+  li {
+    margin-bottom: 10px;
+
+    a {
+      display: block;
+      font-size: 0.9em;
+      color: inherit;
+      text-transform: uppercase;
+      background-color: $second-color;
+
+      &:hover {
+        text-decoration: none;
+        transform: scale(1.1, 1.1);
+      }
+    }
+
+    .text-block {
+      display: block;
+      padding: 0 15px;
+    }
+  }
+}
