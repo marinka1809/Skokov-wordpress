@@ -1075,6 +1075,8 @@ aside .tagcloud {
   padding: 0 5px;
   font-size: 0.9em;
   line-height: 1.4em; }
+  .section-team .caption-photo a {
+    color: inherit; }
 
 .section-team .send-link {
   display: inline-block;

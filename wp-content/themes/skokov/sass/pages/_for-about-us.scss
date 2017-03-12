@@ -79,6 +79,7 @@
 }
 
 .section-team {
+
   li {
     margin-bottom: 30px;
     text-align: center;
@@ -103,6 +104,11 @@
     padding: 0 5px;
     font-size: 0.9em;
     line-height: 1.4em;
+
+    a {
+      color: inherit;
+    }
+
   }
 
   .send-link {

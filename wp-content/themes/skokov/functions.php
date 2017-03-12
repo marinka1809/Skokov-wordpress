@@ -244,3 +244,69 @@ add_action('customize_register', function($customizer){
         )
     );
 });
+
+
+/**
+ * Create custom post type
+ */
+/**
+ * Employees
+ */
+add_action('init', 'register_post_types');
+function register_post_types(){
+    register_post_type('employee', array(
+        'labels' => array(
+            'name'               => 'Employees', // основное название для типа записи
+            'singular_name'      => 'Employee', // название для одной записи этого типа
+            'add_new'            => 'Add new',
+			'add_new_item'       => 'Add new employee',
+			'edit_item'          => 'Edit employee',
+			'new_item'           => 'New employee',
+			'view_item'          => '',
+        ),
+        'description'         => '',
+        'public'              => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        //'rewrite'            => true,
+        'capability_type'    => 'post',
+        'menu_icon'           => 'dashicons-groups',
+        'supports'            => array('title','editor','thumbnail'), // 'title','editor','author',,'excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+        'taxonomies'          => array('positions'),
+        'has_archive'         => true
+    ) );
+}
+
+add_action('init', 'create_taxonomy');
+function create_taxonomy(){
+   $labels = array(
+        'name'              => 'Positions',
+        'singular_name'     => 'Position',
+        'search_items'      => 'Search position',
+        'all_items'         => 'All positions',
+        'edit_item'         => 'Edit position',
+        'update_item'       => 'Update position',
+        'add_new_item'      => 'Add New position',
+        'new_item_name'     => 'New position Name',
+        'menu_name'         => 'Position',
+    );
+    // параметры
+    $args = array(
+        'labels'                => $labels,
+        'description'           => '', // описание таксономии
+        'public'                => true,
+        'show_tagcloud'         => false, // равен аргументу show_ui
+        'hierarchical'          => false,
+        'update_count_callback' => '',
+        'rewrite'               => true,
+        //'query_var'             => $taxonomy, // название параметра запроса
+        'capabilities'          => array(),
+        'meta_box_cb'           => null, // callback функция. Отвечает за html код метабокса (с версии 3.8): post_categories_meta_box или post_tags_meta_box. Если указать false, то метабокс будет отключен вообще
+        'show_admin_column'     => false, // Позволить или нет авто-создание колонки таксономии в таблице ассоциированного типа записи. (с версии 3.5)
+        '_builtin'              => false,
+        'show_in_quick_edit'    => null, // по умолчанию значение show_ui
+    );
+    register_taxonomy('positions', array('employee'), $args );
+}
